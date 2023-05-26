@@ -1,38 +1,76 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ }
+ .base-design{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  flex-direction: row;
+ }
+  .left-content{
+    border: 1px solid red;
+width: 25vw;
+height: 100vh;
+display: flex;
+flex-direction: column;
+gap:1rem;
+background-color: skyblue;
   }
-  to {
-    transform: rotate(360deg);
+  .right-content{
+    border: 1px solid blue;
+    width: 75vw;
+    height: 100vh;
   }
-}
+  button {
+    padding: 10px;
+    width: 150px;
+    margin: 10px;
+    border-radius: 15px;
+    
+  }
+  button:hover{
+     background-color : greenyellow;
+     font-size : 20px;
+  }
+ 
+
+    
+  @media only screen and (max-width: 626px) {
+button{
+   
+width: 100px;
+} 
+    } 
+    @media only screen and (min-width:900px){
+      .left-content{
+        width: 200px;
+      }
+    }
+    @media only screen and (min-width:900px){
+      .right-content{
+        width: 1400px;
+      }
+    }
+
+    .details{
+      display: flex;
+      justify-content: space-around;
+      gap: 2rem;
+    }
+    .box{
+     width : 600px;
+      border: 1px solid blue;
+      margin: 10px;
+      padding: 10px;
+    }
+    img{
+      width: 1000px;
+      height: 400px;
+    }
+    .dashboard-container{
+      background-color: rgb(243, 237, 237);
+    }
+    .row {
+ gap: 3rem;
+    }
+    *{
+      background-color: rgb(238, 233, 233);
+    }

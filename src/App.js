@@ -1,23 +1,42 @@
-import logo from './logo.svg';
+import { Switch } from 'react-router-dom';
 import './App.css';
+import Base from './Base/Base';
+import { Route } from 'react-router-dom';
+import Dashboard from './components/Dashboard';
+import Utilites from './components/Utilites';
+import Pages from './components/Pages';
+import Charts from './components/Charts';
+import Tables from './components/Tables';
+import Components from './components/Components';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <Switch>
+<Route exact path = "/">
+ <Dashboard/>
+</Route>
+<Route  path = "/components">
+ <Components/>
+</Route>
+<Route  path = "/utilites">
+ <Utilites/>
+ </Route>
+ <Route  path = "/pages">
+ <Pages/>
+ </Route>
+ <Route  path = "/charts">
+ <Charts/>
+</Route>
+<Route  path = "/tables">
+ <Tables />
+</Route>     
+
+        
+       </Switch>
+
     </div>
   );
 }
