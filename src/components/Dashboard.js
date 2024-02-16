@@ -1,9 +1,8 @@
 import React from 'react'
-import Base from '../Base/Base'
 
 function Dashboard() {
   return (
-    <Base>
+   
     <div className='dashboard-container'>
 <h4>Dashboard</h4>
 <div className='details'>
@@ -38,7 +37,7 @@ function Dashboard() {
     <img src={"../charts_dashboard.png"}/>
   </div>
     </div>
-    </Base>
+    
   )
 }
 

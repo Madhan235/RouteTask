@@ -1,10 +1,10 @@
 import React from 'react'
-import Base from '../Base/Base';
+  
 import {Button} from "react-bootstrap";
 
 function Pages() {
   return (
-    <Base>
+   
     <div className="container pages">
       <h3>Login Screens:</h3>
       <div className="row">
@@ -38,7 +38,7 @@ function Pages() {
 
     </div>
     
-      </Base>
+    
   )
 }
 

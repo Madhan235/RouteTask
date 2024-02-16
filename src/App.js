@@ -1,6 +1,5 @@
 import { Switch } from 'react-router-dom';
 import './App.css';
-import Base from './Base/Base';
 import { Route } from 'react-router-dom';
 import Dashboard from './components/Dashboard';
 import Utilites from './components/Utilites';
@@ -10,10 +9,12 @@ import Tables from './components/Tables';
 import Components from './components/Components';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './components/Header';
 
 function App() {
   return (
     <div className="App">
+      <Header/>
        <Switch>
 <Route exact path = "/">
  <Dashboard/>
@@ -33,10 +34,7 @@ function App() {
 <Route  path = "/tables">
  <Tables />
 </Route>     
-
-        
        </Switch>
-
     </div>
   );
 }

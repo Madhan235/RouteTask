@@ -1,10 +1,6 @@
 .App {
   text-align: center;
  }
- .base-design{
-  display: flex;
-  flex-direction: row;
- }
   .left-content{
     border: 1px solid red;
 width: 25vw;
@@ -26,11 +22,7 @@ background-color: skyblue;
     border-radius: 15px;
     
   }
-  button:hover{
-     background-color : greenyellow;
-     font-size : 20px;
-  }
- 
+  
 
     
   @media only screen and (max-width: 626px) {
@@ -46,7 +38,7 @@ width: 100px;
     }
     @media only screen and (min-width:900px){
       .right-content{
-        width: 1400px;
+        width: 100%;
       }
     }
 
@@ -62,8 +54,9 @@ width: 100px;
       padding: 10px;
     }
     img{
-      width: 1000px;
-      height: 400px;
+      width: 100%;
+      
+      
     }
     .dashboard-container{
       background-color: rgb(243, 237, 237);
@@ -71,6 +64,8 @@ width: 100px;
     .row {
  gap: 3rem;
     }
-    *{
-      background-color: rgb(238, 233, 233);
-    }
+     
+  header {
+    margin-bottom: 2rem;
+  font-weight: bold;
+  }
